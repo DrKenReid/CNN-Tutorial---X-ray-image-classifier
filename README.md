@@ -42,7 +42,7 @@ This Google Colab notebook implements a Convolutional Neural Network (CNN) for c
 ## ⚙️ Configuration
 You can modify the following parameters in the notebook:
 - `batch_size`: Number of images processed in each training iteration (default: 32)
-- `img_height` and `img_width`: Dimensions of input images (default: 500×500; reduce to 256×256 if encountering memory issues on Colab's free tier)
+- `img_height` and `img_width`: Dimensions of input images (default: 150×150; increase to 256×256 or 512×512 for higher fidelity at the cost of longer training)
 - CNN architecture: Number of convolutional blocks, filters, Dropout rates, and dense layer sizes
 - Training parameters: Number of epochs, EarlyStopping patience, learning rate reduction factor
 

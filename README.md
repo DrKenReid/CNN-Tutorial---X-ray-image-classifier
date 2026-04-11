@@ -39,3 +39,17 @@ This classifier achieves strong performance on the benchmark dataset, but medica
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
+## Related
+
+- [Generalized Analysis of Text Data](https://github.com/DrKenReid/Generalized-Analysis-of-Text-Data) — NLP reference notebook with 13 techniques
+- [VAE for Molecule Discovery](https://github.com/DrKenReid/VAE-for-Molecule-Discovery) — generative modelling for drug discovery
+- [kenreid.co.uk/data_science](https://www.kenreid.co.uk/data_science.html) — all projects, publications, and CV
+
+## Author
+
+**Ken Reid** — Data Scientist, photographer, and avid reader.
+
+- [kenreid.co.uk](https://www.kenreid.co.uk) — Portfolio & blog
+- [@kenreid.co.uk](https://bsky.app/profile/kenreid.co.uk) — Bluesky
+- [@DrKenReid](https://github.com/DrKenReid) — GitHub

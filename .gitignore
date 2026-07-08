@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors
+.vscode/
+.idea/
+
+# Data and models (downloaded/produced by the notebook, not versioned)
+*.zip
+dataset/
+*.keras
+*.h5
+
+# Credentials — never commit these
+kaggle.json

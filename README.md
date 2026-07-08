@@ -9,11 +9,11 @@ A hands-on tutorial implementing a Convolutional Neural Network for classifying 
 | Category | Details |
 |---|---|
 | **Data Pipeline** | Kaggle API integration, `tf.data`/`tf.image` preprocessing, resizing, normalisation |
-| **Data Augmentation** | Random flips, rotations, and zoom to improve generalisation |
+| **Data Augmentation** | Random horizontal flips plus brightness/contrast jitter to improve generalisation |
 | **Class Balancing** | Computed class weights to handle imbalanced medical imaging datasets |
-| **CNN Architecture** | 5-block CNN with BatchNormalization, Dropout, Adam optimiser, binary crossentropy |
-| **Training** | EarlyStopping, ReduceLROnPlateau callbacks, Google Drive checkpointing |
-| **Evaluation** | Accuracy, precision, recall, F1-score, confusion matrix heatmap |
+| **CNN Architecture** | 3-block CNN (32→64→128 filters) with BatchNormalization, Dropout, Adam optimiser, binary crossentropy |
+| **Training** | EarlyStopping, ReduceLROnPlateau callbacks; model and history saved to Google Drive |
+| **Evaluation** | Accuracy, precision, recall, F1-score, confusion matrix heatmap, ROC curve/AUC with operating-threshold analysis |
 | **Reproducibility** | TensorFlow and NumPy random seeds for consistent results |
 
 ## How to Use
@@ -34,7 +34,7 @@ Key parameters you can adjust in the notebook:
 
 ## A Note on Medical AI
 
-This classifier achieves strong performance on the benchmark dataset, but medical imaging in practice demands far more rigour: diverse training populations, radiologist-validated labels, regulatory approval, and prospective clinical trials. The notebook is a pedagogical tool — it demonstrates the mechanics of building a diagnostic CNN, not a deployable clinical system. That gap between "works on a benchmark" and "works in a hospital" is where most of the real engineering lives.
+A model like this can post high validation accuracy yet score noticeably lower on the held-out test set — this benchmark is known for distribution shift and image-level (rather than patient-level) splits, and the notebook includes a section explaining why that gap appears and what it teaches. Medical imaging in practice demands far more rigour: patient-level data splits, diverse training populations, radiologist-validated labels, regulatory approval, and prospective clinical trials. The notebook is a pedagogical tool — it demonstrates the mechanics of building a diagnostic CNN, not a deployable clinical system. That gap between "works on a benchmark" and "works in a hospital" is where most of the real engineering lives.
 
 ## License
 

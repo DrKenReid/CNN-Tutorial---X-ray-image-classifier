@@ -17,7 +17,7 @@ This project runs in Google Colab — no local setup required:
 2. Run all cells
 3. Make your changes
 
-For local development:
+For local development (advanced): the notebook is written Colab-first — it mounts Google Drive and stores data under `/content/`. The Colab-specific cells skip gracefully outside Colab, but you will need to place your `kaggle.json` in `~/.kaggle/` and adjust the dataset and model-save paths before running:
 
 ```bash
 git clone https://github.com/DrKenReid/CNN-Tutorial---X-ray-image-classifier.git

@@ -1,6 +1,9 @@
+# Google Colab (the recommended environment) preinstalls all of these except kaggle.
+# Listed for local runs and dependency documentation.
+kaggle
 matplotlib
 numpy
 pandas
 seaborn
 scikit-learn
-tensorflow
+tensorflow>=2.9

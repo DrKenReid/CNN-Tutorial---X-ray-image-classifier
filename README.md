@@ -19,7 +19,7 @@ A hands-on tutorial implementing a Convolutional Neural Network for classifying 
 ## How to Use
 
 1. Open the notebook in Google Colab using the badge above (free GPU recommended: **Runtime → Change runtime type → GPU**).
-2. You will need a [Kaggle API token](https://www.kaggle.com/settings/account) — the notebook walks you through setup.
+2. You will need a [Kaggle API token](https://www.kaggle.com/settings/account) — create one under "API Tokens" (recommended; legacy credentials also still work). The notebook walks you through setup and installs the required `kaggle` CLI (≥ 1.8.0).
 3. Run the cells in order. The notebook automatically downloads the chest X-ray dataset, trains the model, and evaluates performance.
 4. The trained model and training history are saved to your Google Drive automatically.
 

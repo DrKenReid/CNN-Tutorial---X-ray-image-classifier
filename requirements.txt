@@ -1,6 +1,6 @@
 # Google Colab (the recommended environment) preinstalls all of these except kaggle.
 # Listed for local runs and dependency documentation.
-kaggle
+kaggle>=1.8.0  # 1.8.0+ required for Kaggle's new API tokens
 matplotlib
 numpy
 pandas

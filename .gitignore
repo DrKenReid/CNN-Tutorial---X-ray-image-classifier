@@ -19,3 +19,4 @@ dataset/
 
 # Credentials — never commit these
 kaggle.json
+access_token
